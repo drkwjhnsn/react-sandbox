@@ -1,0 +1,161 @@
+/* form */
+
+input, button, .Select-control {
+  padding: 8px 10px;
+  font-size: 14pt;
+  font-weight: 300;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  outline: none;
+  width:auto;
+  min-width: 0;
+}
+
+input, button, .Select, .error, .checkbox, h1, h2, h3 {
+  margin: 4px 5px;
+}
+
+input:placeholder-shown{
+  color: #7C8495;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+}
+
+.error {
+  margin-top: 0px;
+  padding: 0 8px;
+  font-size: 10pt;
+  color: #D22337;
+}
+
+/* flex form */
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flexRow > * {
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+/* react select */
+
+.Select-value, .Select-placeholder {
+  padding: 10px 10px;
+  padding-right: 35px;
+  outline: none;
+  color: #7C8495;
+}
+
+.Select-input {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.Select-input>input {
+  padding: 0;
+  text-overflow: clip;
+}
+
+.Select-control {
+  width: 100%
+}
+/* checkbox */
+
+/* Customize the label (the container) */
+.checkbox {
+  height: 27px;
+  display: block;
+  padding-top: 7px;
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 28px;
+ width: 28px;
+ background-color: #FFFFFF;
+ border: 3px solid #808080;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+  padding-left: 1px;
+  font-size: 26px;
+  content: "\F00C";
+  font-family: 'FontAwesome';
+  color: #CC192F;
+}
+
+/* AddCard */
+.addCard button {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.addCardCancelButton {
+  background-color: #808080;
+}
+
+.addCardSubmitButton {
+  background-color: #CC192F;
+}
+
+/* CreditCardLogos */
+
+.creditCardLogos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.creditCardLogos > * {
+  padding: 4px 5px;
+  width: 25%;
+  max-width: 150px;
+}
+
+.creditCardLogo {
+  width: 100%;
+}
+
+.inactiveCard {
+  opacity: .4;
+}
